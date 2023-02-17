@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: perform test
-        uses: actions/checkup@v2
+        uses: _tests_/app.test.js
       - name: Use node.js
         uses: actions/setup-node@v2
         with:
