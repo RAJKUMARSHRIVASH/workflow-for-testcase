@@ -13,7 +13,7 @@ Create a command line argument based calculator using Node.js that takes in math
 - cosine ( cos ) - 1 mark
 - tangent ( tan ) - 1 mark
 - random number generation  ( random ) - 3 mark
-- random number generation error message  ( random ) - 1 mark
+- random number generation error message  ( random ) - 1 mark 
 
 The code should use the built-in crypto module to generate random numbers, and should also have the capability to take in an additional argument for determining the length of the generated random number (in the `random` operation if the length is not provided it should show the `"Provide length for random number generation."` message (without cote) ).
 
