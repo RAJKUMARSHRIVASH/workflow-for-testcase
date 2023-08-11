@@ -1,0 +1,26 @@
+name: Creating and Running a Test Case
+on:
+  push:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: perform test
+        uses: _tests_/app.test.js
+      - name: Use node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+      - name: test results
+        uses: actions/uploads-artifact@v2
+        with:
+          name: test-results
+          path: test_results.txt
+
+
